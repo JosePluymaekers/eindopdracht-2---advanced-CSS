@@ -1,0 +1,74 @@
+@import "./constants";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}  
+
+.socialmedia {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 20px;
+  right: 0px;
+}
+
+
+a{  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  padding-left: 10px;
+}
+
+
+.facebook {
+  background-color: $color-facebook;
+  @include button;
+
+    &__logo {
+      @include logo
+    }
+}
+
+.twitter {
+  background-color: $color-twitter;
+  @include button;
+
+    &__logo {
+      @include logo
+    }
+}
+
+.blog {
+  background-color: $color-blog;
+  @include button;
+
+    &__logo {
+      @include logo 
+    } 
+}
+
+.linkedin {
+  background-color: $color-linkedin;
+  @include button;
+
+    &__logo {
+      @include logo
+    }
+}
+
+
+.github {
+  background-color: $color-github;
+  @include button;
+
+    &__logo {
+      @include logo
+    }
+}
+
+.github:hover, .facebook:hover, .linkedin:hover, .blog:hover .twitter:hover {
+  @include transistion; 
+}

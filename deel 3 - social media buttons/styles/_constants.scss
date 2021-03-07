@@ -1,0 +1,30 @@
+// Variables
+
+$color-facebook: #3b5998;
+$color-blog: #e17b77;
+$color-twitter: #00aced;
+$color-github: #333;
+$color-linkedin: #007bb6;
+
+@mixin button {
+    width: 300px;
+    height: 20px;
+    padding: 8px;
+    position: relative;
+    right: -270px;
+  }
+
+ @mixin logo {
+    width: 30px;
+    height: 30px; 
+    position: relative;
+    top: -5px;
+ } 
+
+
+@mixin transition {
+    transform: translateX(-200px); 
+    transition-timing-function: ease-in-out;
+    transition: 500ms;
+}
+

@@ -1,0 +1,86 @@
+@import "./constants";
+
+* {
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    background-color: $color-grey;
+    justify-content: center;
+    margin: auto;
+}   
+.main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    margin: 10px;
+  }
+  
+  &__image {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+  }
+  
+  &--overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: $color-blue;
+  }
+  
+    &--overlay:hover {
+    opacity: 1;
+  }
+  
+    &__button {
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+  }
+
+
+  @media (min-width: 768px) {
+    .main {
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+    .portfolio {
+    position: relative;
+    width: 45%;
+    height: 45%;
+    margin: 10px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .main {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+  .portfolio {
+  position: relative;
+  width: 30%;
+  height: 30%;
+  margin: 10px;
+}
+}
